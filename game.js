@@ -668,17 +668,17 @@ function otherwise(first, second) {
 
                                 // tepasida ili pasida nul bosa owatga kiriwi
                                 if (j == second.index) {
-                                    for (i; i >= second.row; i--) {
+                                    for (let a = i; a >= second.row; a--) {
                                        // yonida bosa true qaytariw
-                                        if (i == second.row && j == second.index) return true
+                                        if (a == second.row && j == second.index) return true
                                         // nul bomasa cqb ketiw
-                                        if (arr[i][j]) break
+                                        if (arr[a][j]) break
                                     }
-                                    for (i; i <= second.row; i++) {
+                                    for (let a = i; a <= second.row; a++) {
                                         // yonida bosa true qaytariw
-                                         if (i == second.row && j == second.index) return true
+                                         if (a == second.row && j == second.index) return true
                                          // nul bomasa cqb ketiw
-                                         if (arr[i][j]) break
+                                         if (arr[a][j]) break
                                      }   
                                 }
                             }
@@ -694,17 +694,17 @@ function otherwise(first, second) {
 
                             // tepasida ili pasida nul bosa owatga kiriwi
                             if (j == second.index) {
-                                for (i; i >= second.row; i--) {
+                                for (let a = i; a >= second.row; a--) {
                                    // yonida bosa true qaytariw
-                                    if (i == second.row && j == second.index) return true
+                                    if (a == second.row && j == second.index) return true
                                     // nul bomasa cqb ketiw
-                                    if (arr[i][j]) break
+                                    if (arr[a][j]) break
                                 }
-                                for (i; i <= second.row; i++) {
+                                for (let a = i; a <= second.row; a++) {
                                     // yonida bosa true qaytariw
-                                     if (i == second.row && j == second.index) return true
+                                     if (a == second.row && j == second.index) return true
                                      // nul bomasa cqb ketiw
-                                     if (arr[i][j]) break
+                                     if (arr[a][j]) break
                                  }   
                             }
                         }
