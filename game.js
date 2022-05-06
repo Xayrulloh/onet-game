@@ -159,7 +159,7 @@ for (let cell of cells) {
             let firstClick = {row: clicked[0].getAttribute('row'), index: clicked[0].getAttribute('index'), imgId: clicked[0].getAttribute('imgId')}, secondClick = {row: clicked[1].getAttribute('row'), index: clicked[1].getAttribute('index'), imgId: clicked[1].getAttribute('imgId')}
             
             // agar 1ta bosganini yana bosza
-            if (firstClick.row == secondClick.row && secondClick.index == firstClick.index) {clicked = []; return}
+            if ((firstClick.row == secondClick.row && secondClick.index == firstClick.index) || !arr[firstClick.row][firstClick.index] || !arr[secondClick.row][secondClick.index]) {clicked = []; return}
             
             // chetidaligini va tengligini tekwiriw
             else if ((firstClick.row == 0 && secondClick.row == 0 && firstClick.imgId == secondClick.imgId) || (firstClick.row == arr.length - 1 && secondClick.row == arr.length - 1 && firstClick.imgId == secondClick.imgId) || (firstClick.index == 0 && secondClick.index == 0 && firstClick.imgId == secondClick.imgId) || (firstClick.index == arr[0].length - 1 && secondClick.index == arr[0].length - 1 && firstClick.imgId == secondClick.imgId)) {
